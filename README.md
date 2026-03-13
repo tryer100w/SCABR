@@ -1,4 +1,5 @@
-# SCABR: Semantic Correlation-Aware Background Removal for Few-Shot Learning
+# BSCAF: Background-based Semantic Correlation-Aware Framework for few-shot image classification
+
 
 ## Dependencies
 * python 3.9.21
@@ -7,7 +8,7 @@
 * GPU (RTX3090) + CUDA11.0 CuDNN
   
 ## Overview
-We propose a framework termed Semantic Correlation-Aware Background Removal (SCABR) for few-shot image classification to alleviate distribution bias
+We propose a framework termed Background-based Semantic Correlation-Aware Framework (BASCAF) for few-shot image classification to alleviate distribution bias
 caused by background variations. The entire process is illustrated in below.
 The novel dataset is processed via saliency detection to separate corresponding
 foreground and background images. In order to group images by class labels,
@@ -54,7 +55,7 @@ python multiply_files.py
 
 python image_similarity_select.py --root_folder root_folder_path --folder1 folder1_path --folder2 folder2_path --folder5 folder5_path
 
-## Evaluate SCABR method
+## Evaluate BASCAF method
 python train_vit.py --dataset miniImageNet --exp pre-train --rand_aug --repeat_aug --epochs 800
 
 python train_vit_sp.py   --dataset miniImageNet  --exp sp   --init checkpoint/miniImageNet/visformer-t/pre-train/checkpoint_epoch_800.pth
