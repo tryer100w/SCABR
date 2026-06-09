@@ -28,32 +28,20 @@ The dataset can be downloaded from the following links:
 * [CUB](https://drive.google.com/file/d/1hbzc_P1FuxMkcabkgn9ZKinBwW683j45/view)
 
 ## Preparation Before Running
-Place the foreground_images and background_images in the `filelist` directory. The acquisition method can be referenced from the  [VST]([https://github.com/nnizhang/VST]() implementation.
 
 Ensure that datasets are located in the `filelist` directory. 
 
 #### Dataset Structure:
 ```
---SCABR
+--BSCAF
     |--filelist
         |--miniImageNet
             |--train
-            |--train_fore
-            |--train_back
             |--val
-            |--val_fore
-            |--val_back
             |--test
-            |--test_fore
-            |--test_back
+
 
 ```
-## Process Images
-python cluster.py --n_cluster 50 --input_folder input_folder_path --output_root output_root_path
-
-python multiply_files.py
-
-python image_similarity_select.py --root_folder root_folder_path --folder1 folder1_path --folder2 folder2_path --folder5 folder5_path
 
 ## Evaluate BASCAF method
 python train_vit.py --dataset miniImageNet --exp pre-train --rand_aug --repeat_aug --epochs 800
