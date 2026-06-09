@@ -19,7 +19,8 @@ removal based on the ranking of scores is performed. The ratio parameter α is
 set to 0.2. Finally, we leverage a large language model to generate descriptions
 as semantic prompts for adaptively tuning the visual feature extraction, and extract representative features through the action of the background suppression
 module.
-<img width="1260" height="678" alt="绘图_改进" src="https://github.com/user-attachments/assets/9af3e71d-a61b-41b3-8713-9af34cb7d25c" />
+<img width="1260" height="678" alt="BSCAF" src="https://github.com/user-attachments/assets/fb72a6c2-85ef-4e04-8bff-f702bc2dba81" />
+" />
 
 ## Datasets
 The dataset can be downloaded from the following links:
